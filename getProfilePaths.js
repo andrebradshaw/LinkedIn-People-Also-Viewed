@@ -9,7 +9,7 @@ function getProfilePaths(){
 	var ebtn = (ob,nm)=>{return ob.getElementsByTagName(nm);};
 
 	var alsoViewedCont = ebcn(d,'pv-profile-section__section-info section-info browsemap mt4')[0];
-	if(alsoViewedCont != null){
+	if(alsoViewedCont){
 		var alsoViewedList = ebcn(alsoViewedCont, 'pv-browsemap-section__member-container mt4');
 
 		Array.from(alsoViewedList).forEach(itm=>{
